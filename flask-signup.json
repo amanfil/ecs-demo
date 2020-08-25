@@ -32,8 +32,7 @@
             "volumesFrom": []
         }
     ]
-}{
-    "family": "flask-signup",
+}{   "family": "flask-signup",
     "containerDefinitions": [
         {
             "image": "482673545144.dkr.ecr.us-west-2.amazonaws.com/flask-signup:v_%BUILD_NUMBER%",
