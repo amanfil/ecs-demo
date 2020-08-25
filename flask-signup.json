@@ -1,4 +1,4 @@
-{
+
     "family": "ecs-test-family",
     "placementConstraints": [],
     "volumes": [],
@@ -30,6 +30,23 @@
             "memory": 1024,
             "cpu": 0,
             "volumesFrom": []
+        }
+    ]
+}{
+    "family": "flask-signup",
+    "containerDefinitions": [
+        {
+            "image": "482673545144.dkr.ecr.us-west-2.amazonaws.com/flask-signup:v_%BUILD_NUMBER%",
+            "name": "flask-signup",
+            "cpu": 10,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 80
+                }
+            ]
         }
     ]
 }
