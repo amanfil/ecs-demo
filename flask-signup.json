@@ -4,7 +4,7 @@
         {
             "image": "482673545144.dkr.ecr.us-west-2.amazonaws.com/flask-signup:v_%BUILD_NUMBER%",
             "name": "flask-signup",
-            "cpu": 10,
+            "cpu": 1,
             "memory": 256,
             "essential": true,
             "portMappings": [
